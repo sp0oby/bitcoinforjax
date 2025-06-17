@@ -72,11 +72,13 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'LocalBusiness',
+              '@type': 'Organization',
               'name': 'Bitcoin for Jax',
               'description': 'Bitcoin payment solutions for Jacksonville, Florida businesses',
               'url': 'https://bitcoinforjax.com',
               'telephone': '(904) 250-4059',
+              'logo': 'https://bitcoinforjax.com/images/logo.png',
+              'image': 'https://bitcoinforjax.com/images/bitcoin-for-jax-og.png',
               'address': {
                 '@type': 'PostalAddress',
                 'addressLocality': 'Jacksonville',
@@ -97,4 +99,4 @@ export default function RootLayout({
       </body>
     </html>
   )
-} 
+}
